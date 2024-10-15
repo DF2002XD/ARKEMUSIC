@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.song-list, .artist-list {
+    list-style: none;
+    padding: 0;
+}
+
+.song-item {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.song-item:hover {
+    background-color: #e0e0e0;
+}
+
+.song-title {
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between title and buttons */
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-top: 5px; /* Space above the button container */
+}
+
+.button {
+    padding: 5px 10px;
+    background-color: #4CAF50; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded borders */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover */
+}
+
+.button:hover {
+    background-color: #45a049; /* Background color on hover */
+}
+
+.player {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.artist-item {
+    display: inline-block;
+    margin-right: 20px; /* Space between artists */
+    text-align: center; /* Center text below image */
+}
+
+.artist-item img {
+    display: block;
+    max-width: 100px; /* Maximum image size */
+    border-radius: 50%; /* Make images circular */
+    margin: 0 auto; /* Center image */
+}
+
+.artist-item span {
+    display: block; /* Ensure artist name is on its own line */
+    margin-top: 5px; /* Space between image and artist name */
+}
+
+.youtube-link {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.youtube-link a {
+    display: inline-block;
+    background-color: #998d8d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.youtube-link a:hover {
+    background-color: #cc0000d8;
+}
+.youtube-logo {
+    width:120px;
+    height: 30px; 
+}
+
+.download-link {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #333;
+    text-decoration: none;
+    background-color: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none; /* Hide download link by default */
+}
+
+.song-item:hover .download-link {
+    display: block; /* Show download link on song item hover */
+}
+
+.download-link:hover {
+    background-color: #e6b800;
+}
+
+.copy-buttons {
+    margin-top: 5px; /* Space above */
+}
+
+.copy-link {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    background-color: #00ccff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.copy-link:hover {
+    background-color: #00a3cc;
+}

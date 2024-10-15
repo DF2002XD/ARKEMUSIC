@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARKEANOS Música</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="img/arkeanos.jpg" rel="shortcut icon">
+</head>
+<body>
+    <div class="container">
+        <h1>ARKEANOS Música</h1>
+        <h2>Canciones TOP</h2>
+        <ul class="song-list">
+            <li class="song-item" onclick="playSong('https://www.youtube.com/watch?v=oF2ls68pt3k')">
+                <div class="song-title">ARKADIA RAP | KRONNO ZOMBER (Prod.Rotter Beats)</div>
+                <div class="song-artist">Artista: KronnoZomberOficial</div>
+            </li>
+            <li class="song-item" onclick="playSong('https://www.youtube.com/watch?v=ID_DEL_VIDEO')">
+                <div class="song-title">DE NUEVO REMIX - DJ ARKEANO, H3CK0, SR TORTUGA</div>
+                <div class="song-artist">Artista: DJARKEANOBABY</div>
+            </li>
+        </ul>
+        <div>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2ogqqN12QVCFib57e15ecN?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div id="videoContainer" style="display: none;">
+            <iframe id="videoPlayer" width="560" height="315" frameborder="0" allow="playSong" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        function playSong(videoUrl) {
+            var videoContainer = document.getElementById("videoContainer");
+            var videoPlayer = document.getElementById("videoPlayer");
+            videoPlayer.src = videoUrl.replace("watch?v=", "embed/"); // Cambia la URL para que sea compatible con iframe
+            videoContainer.style.display = "block"; // Muestra el contenedor del video
+        }
+    </script>
+</body>
+</html>

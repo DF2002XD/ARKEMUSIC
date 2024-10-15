@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARKEANOS Música</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="img/arkeanos.jpg" rel="shortcut icon">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ARKEANOS Música</h1>
+        <audio id="audioPlayer" controls style="display: none;"></audio> <!-- Reproductor de audio oculto -->
+        <h2>Canciones TOP</h2>
+        <ul class="song-list">
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Kronno Zomber/music/ARKADIA RAP _ KRONNO ZOMBER (Prod.Rotter Beats) _ ( Videoclip Oficial ) - Kronno Zomber.mp3')">
+                <div class="song-title">ARKADIA RAP | KRONNO ZOMBER (Prod.Rotter Beats) | ( Videoclip Oficial )</div>
+                <div class="song-artist">Artista: KronnoZomberOficial</div>
+                <a class="download-link"
+                    href="musica/artistas/Kronno Zomber/music/ARKADIA RAP _ KRONNO ZOMBER (Prod.Rotter Beats) _ ( Videoclip Oficial ) - Kronno Zomber.mp3"
+                    download>Descargar</a>
+
+
+
+
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/DJ ARKEANO/music/DE NUEVO REMIX - DJ ARKEANO, H3CK0, SR TORTUGA.mp3')">
+                <div class="song-title">DE NUEVO REMIX - DJ ARKEANO, H3CK0, SR TORTUGA</div>
+                <div class="song-artist">Artista: DJLalitoArkeano</div>
+                <a class="download-link"
+                    href="musica/artistas/DJ ARKEANO/music/DE NUEVO REMIX - DJ ARKEANO, H3CK0, SR TORTUGA.mp3"
+                    download>Descargar</a>
+            </li>
+        </ul>
+
+        <h2>Canciones Recientes</h2>
+        <ul class="song-list">
+            <li class="song-item" onclick="playSong('musica/artistas/DJ ARKEANO/music/DEMBOW KILATE.mp3')">
+                <div class="song-title">DEMBOW KILATE</div>
+                <div class="song-artist">Artista: DJLalitoArkeano</div>
+                <a class="download-link" href="musica/artistas/DJ ARKEANO/music/DEMBOW KILATE.mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/H3CKO/music/SR. TORTUGA X BAD BUNNY X ELADIO CARRION [IA] - La monté   [MARBELLA VICE NEXXUZ].mp3')">
+                <div class="song-title">SR. TORTUGA X BAD BUNNY X ELADIO CARRION [IA] - La monté 🌹</div>
+                <div class="song-artist">Artista: H3CKO</div>
+                <a class="download-link"
+                    href="musica/artistas/H3CKO/music/SR. TORTUGA X BAD BUNNY X ELADIO CARRION [IA] - La monté   [MARBELLA VICE NEXXUZ].mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Triángulo amoroso - Cuervø ft Harry Callahan.mp3')">
+                <div class="song-title">Triángulo amoroso - Cuervø ft Harry Callahan</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Triángulo amoroso - Cuervø ft Harry Callahan.mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item" onclick="playSong('musica/artistas/Sr. Tortuga/music/Pixelada - Sr. Tortuga.mp3')">
+                <div class="song-title">Pixelada - Sr. Tortuga</div>
+                <div class="song-artist">Artista: Sr. Tortuga.</div>
+                <a class="download-link" href="musica/artistas/Sr. Tortuga/music/Pixelada - Sr. Tortuga.mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Lion Kxng/music/FUCK SAPOS - Lion Kxng  IA (PROD LK).mp3')">
+                <div class="song-title">FUCK SAPOS - Lion Kxng IA (PROD LK)</div>
+                <div class="song-artist">Artista: Lion Kxng</div>
+                <a class="download-link" href="musica/artistas/Lion Kxng/music/FUCK SAPOS - Lion Kxng  IA (PROD LK).mp3"
+                    download>Descargar</a>
+            </li>
+            <!-- Agregar más canciones aquí -->
+            <!--H3CKO-->
+            <li class="song-item"
+                onclick="playSong('musica/artistas/H3CKO/music/SR. TORTUGA -  BELLAQUEO   [MARBELLA VICE NEXXUZ].mp3')"
+                style="display: none;">
+                <div class="song-title">SR. TORTUGA - BELLAQUEO 🥵 [MARBELLA VICE NEXXUZ]</div>
+                <div class="song-artist">Artista: H3CKO</div>
+                <a class="download-link"
+                    href="musica/artistas/H3CKO/music/SR. TORTUGA -  BELLAQUEO   [MARBELLA VICE NEXXUZ].mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/H3CKO/music/SR. TORTUGA  - DE NUEVO    [MARBELLA VICE NEXXUZ].mp3')"
+                style="display: none;">
+                <div class="song-title">SR. TORTUGA - DE NUEVO 🔥</div>
+                <div class="song-artist">Artista: H3CKO</div>
+                <a class="download-link"
+                    href="musica/artistas/H3CKO/music/SR. TORTUGA  - DE NUEVO    [MARBELLA VICE NEXXUZ].mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/H3CKO/music/H3CK0 X SR. TORTUGA - GRACIAS  (FIN).mp3')"
+                style="display: none;">
+                <div class="song-title">H3CK0 X SR. TORTUGA - GRACIAS ❤️ (FIN)</div>
+                <div class="song-artist">Artista: H3CKO</div>
+                <a class="download-link" href="musica/artistas/H3CKO/music/H3CK0 X SR. TORTUGA - GRACIAS  (FIN).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/H3CKO/music/SR. TORTUGA X ELADIO CARRION (IA) - POR SIEMPRE  (BODA MINNIE).mp3')"
+                style="display: none;">
+                <div class="song-title">SR. TORTUGA X ELADIO CARRION (IA) - POR SIEMPRE 💍 (BODA MINNIE)</div>
+                <div class="song-artist">Artista: H3CKO</div>
+                <a class="download-link"
+                    href="musica/artistas/H3CKO/music/SR. TORTUGA X ELADIO CARRION (IA) - POR SIEMPRE  (BODA MINNIE).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/H3CKO/music/H3CK0 X SR. TORTUGA X DUKI (IA) - NEED FOR SPEED.mp3')"
+                style="display: none;">
+                <div class="song-title">SR. TORTUGA X DUKI (IA) - NEED FOR SPEED 🚗💨</div>
+                <div class="song-artist">Artista: H3CKO</div>
+                <a class="download-link"
+                    href="musica/artistas/H3CKO/music/H3CK0 X SR. TORTUGA X DUKI (IA) - NEED FOR SPEED.mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item" onclick="playSong('musica/artistas/H3CKO/music/SR. TORTUGA - SUMMER 2.mp3')"
+                style="display: none;">
+                <div class="song-title">SR. TORTUGA - SUMMER 2 😔 [YIN YANG] #ELFRIOVERANO</div>
+                <div class="song-artist">Artista: H3CKO</div>
+                <a class="download-link" href="musica/artistas/H3CKO/music/SR. TORTUGA - SUMMER 2.mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/H3CKO/music/SR. TORTUGA X BAD BUNNY (IA) - FVCKSPS #MYLOVE  [SOFI 2].mp3')"
+                style="display: none;">
+                <div class="song-title">SR. TORTUGA X BAD BUNNY (IA) - FVCKSPS #MYLOVE [SOFI 2]</div>
+                <div class="song-artist">Artista: H3CKO</div>
+                <a class="download-link"
+                    href="musica/artistas/H3CKO/music/SR. TORTUGA X BAD BUNNY (IA) - FVCKSPS #MYLOVE  [SOFI 2].mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/H3CKO/music/SR. TORTUGA X BAD BUNNY X ELADIO CARRION (IA) - Minnie (POLICIA).mp3')"
+                style="display: none;">
+                <div class="song-title">SR. TORTUGA X BAD BUNNY X ELADIO CARRION (IA) - Minnie (POLICIA)</div>
+                <div class="song-artist">Artista: H3CKO</div>
+                <a class="download-link"
+                    href="musica/artistas/H3CKO/music/SR. TORTUGA X BAD BUNNY X ELADIO CARRION (IA) - Minnie (POLICIA).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item" onclick="playSong('musica/artistas/H3CKO/music/SR. TORTUGA - SOFI  [OTRA].mp3')"
+                style="display: none;">
+                <div class="song-title">SR. TORTUGA - SOFI [OTRA]</div>
+                <div class="song-artist">Artista: H3CKO</div>
+                <a class="download-link" href="musica/artistas/H3CKO/music/SR. TORTUGA - SOFI  [OTRA].mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item" onclick="playSong('musica/artistas/H3CKO/music/SR. TORTUGA - SUMMER (TA KILATE).mp3')"
+                style="display: none;">
+                <div class="song-title">SR. TORTUGA - SUMMER (TA KILATE)</div>
+                <div class="song-artist">Artista: H3CKO</div>
+                <a class="download-link" href="musica/artistas/H3CKO/music/SR. TORTUGA - SUMMER (TA KILATE).mp3"
+                    download>Descargar</a>
+            </li>
+            <!--cuervo-->
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Mariló - Cuervø ft Sr. Tortuga (prod. @RamaLow).mp3')"
+                style="display: none;">
+                <div class="song-title">Mariló - Cuervø ft Sr. Tortuga (prod. @RamaLow)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Mariló - Cuervø ft Sr. Tortuga (prod. @RamaLow).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Tiempos de antaño - @GerXentation ft. Cuervø.mp3')"
+                style="display: none;">
+                <div class="song-title">Tiempos de antaño - @GerXentation ft. Cuervø</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Tiempos de antaño - @GerXentation ft. Cuervø.mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Animal Racing - Cuervø ft Sr. Tortuga (prod. @gasshawty).mp3')"
+                style="display: none;">
+                <div class="song-title">Animal Racing - Cuervø ft Sr. Tortuga (prod. @gas_shawty)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Animal Racing - Cuervø ft Sr. Tortuga (prod. @gasshawty).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Equinoccio - Cuervø ft Summer (intro de su canal). (prod. @cichejarn).mp3')"
+                style="display: none;">
+                <div class="song-title">Equinoccio - Cuervø ft Summer (intro de su canal)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Equinoccio - Cuervø ft Summer (intro de su canal). (prod. @cichejarn).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Trampa de sentimientos - Cuervø ft Barry (prod. @unlucky4794).mp3')"
+                style="display: none;">
+                <div class="song-title">Trampa de sentimientos - Cuervø ft Barry (prod. @unlucky4794)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Trampa de sentimientos - Cuervø ft Barry (prod. @unlucky4794).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Nunca te abandonaré - Cuervø ft. Yomal (prod. @6feetbeat).mp3')"
+                style="display: none;">
+                <div class="song-title">Nunca te abandonaré - Cuervø ft. Yomal (prod. @6feetbeat)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Nunca te abandonaré - Cuervø ft. Yomal (prod. @6feetbeat).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Catarsis - Cuervø ft Yomal (prod. @RamaLow).mp3')"
+                style="display: none;">
+                <div class="song-title">Catarsis - Cuervø ft Yomal (prod. @RamaLow)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Catarsis - Cuervø ft Yomal (prod. @RamaLow).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/La traición - Cuervø ft Barry #FuckSapos (prod. @RamaLow).mp3')"
+                style="display: none;">
+                <div class="song-title">La traición - Cuervø ft Barry #FuckSapos (prod. @RamaLow)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/La traición - Cuervø ft Barry #FuckSapos (prod. @RamaLow).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Minnie - Cuervø ft Sr. Tortuga (prod. Spray).mp3')"
+                style="display: none;">
+                <div class="song-title">Minnie - Cuervø ft Sr. Tortuga (prod. Spray)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Minnie - Cuervø ft Sr. Tortuga (prod. Spray).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Ambivalencia - Cuervø ft @GerXentation (prod. @TAWANZ-dl5kr).mp3')"
+                style="display: none;">
+                <div class="song-title">Ambivalencia - Cuervø ft @GerXentation (prod. @TAWANZ-dl5kr)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Ambivalencia - Cuervø ft @GerXentation (prod. @TAWANZ-dl5kr).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Facts - Cuervø ft Sr. Tortuga (beef) (prod. @RamaLow).mp3')"
+                style="display: none;">
+                <div class="song-title">Facts - Cuervø ft Sr. Tortuga (beef) (prod. @RamaLow)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Facts - Cuervø ft Sr. Tortuga (beef) (prod. @RamaLow).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Equinoccio - Cuervø ft Summer (prod.@cichejarn).mp3')"
+                style="display: none;">
+                <div class="song-title">Equinoccio - Cuervø ft Summer (prod.@cichejarn)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Equinoccio - Cuervø ft Summer (prod.@cichejarn).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Ni por oro te cambio - Cuervø ft. Sr Tortuga (prod. @madebysavyy).mp3')"
+                style="display: none;">
+                <div class="song-title">Ni por oro te cambio - Cuervø ft. Sr Tortuga (prod. @madebysavyy)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Ni por oro te cambio - Cuervø ft. Sr Tortuga (prod. @madebysavyy).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Tierras de sufrimiento - Cuervø ft @GerXentation (prod. @wetgropes).mp3')"
+                style="display: none;">
+                <div class="song-title">Tierras de sufrimiento - Cuervø ft @GerXentation (prod. @wetgropes)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Tierras de sufrimiento - Cuervø ft @GerXentation (prod. @wetgropes).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Dónde estás_ - Cuervø (prod.@freedomBeatz).mp3')"
+                style="display: none;">
+                <div class="song-title">¿Dónde estás? - Cuervø (prod.@freedomBeatz)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Dónde estás_ - Cuervø (prod.@freedomBeatz).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Chernobyl - Cuervø (prod. @6feetbeat).mp3')"
+                style="display: none;">
+                <div class="song-title">Chernobyl - Cuervø (prod. @6feetbeat)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link" href="musica/artistas/Cuervø/music/Chernobyl - Cuervø (prod. @6feetbeat).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Papá HD - Cuervø ft Sr Tortuga (prod. @6feetbeat).mp3')"
+                style="display: none;">
+                <div class="song-title">Papá HD - Cuervø ft Sr Tortuga (prod. @6feetbeat)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Papá HD - Cuervø ft Sr Tortuga (prod. @6feetbeat).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/El filo de Sofía - Cuervø ft. Sr Tortuga (prod @6feetbeat).mp3')"
+                style="display: none;">
+                <div class="song-title">El filo de Sofía - Cuervø ft. Sr Tortuga (prod @6feetbeat)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/El filo de Sofía - Cuervø ft. Sr Tortuga (prod @6feetbeat).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Summer o Sofía_ - Cuervø ft Sr Tortuga (prod.@raspobeats).mp3')"
+                style="display: none;">
+                <div class="song-title">¿Summer o Sofía? - Cuervø ft Sr Tortuga (prod.@raspobeats)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Summer o Sofía_ - Cuervø ft Sr Tortuga (prod.@raspobeats).mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Cuervø/music/Summer - Cuervø ft Sr. Tortuga (@prodneverforever).mp3')"
+                style="display: none;">
+                <div class="song-title">Summer - Cuervø ft Sr. Tortuga (@prodneverforever)</div>
+                <div class="song-artist">Artista: Cuervofake</div>
+                <a class="download-link"
+                    href="musica/artistas/Cuervø/music/Summer - Cuervø ft Sr. Tortuga (@prodneverforever).mp3"
+                    download>Descargar</a>
+            </li>
+            <!--Sr. Tortuga-->
+            <li class="song-item" onclick="playSong('musica/artistas/Sr. Tortuga/music/Modo Gemelos - Sr. Tortuga.mp3')"
+                style="display: none;">
+                <div class="song-title">Modo Gemelos - Sr. Tortuga</div>
+                <div class="song-artist">Artista: Sr. Tortuga.</div>
+                <a class="download-link" href="musica/artistas/Sr. Tortuga/music/Modo Gemelos - Sr. Tortuga.mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item" onclick="playSong('musica/artistas/Sr. Tortuga/music/Sardina - Sr. Tortuga.mp3')"
+                style="display: none;">
+                <div class="song-title">Sardina - Sr. Tortuga</div>
+                <div class="song-artist">Artista: Sr. Tortuga.</div>
+                <a class="download-link" href="musica/artistas/Sr. Tortuga/music/Sardina - Sr. Tortuga.mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Sr. Tortuga/music/MUDRHGED RONEANTE KK - Sr. Tortuga.mp3')"
+                style="display: none;">
+                <div class="song-title">MUDRHGED RONEANTE KK - Sr. Tortuga</div>
+                <div class="song-artist">Artista: Sr. Tortuga.</div>
+                <a class="download-link" href="musica/artistas/Sr. Tortuga/music/MUDRHGED RONEANTE KK - Sr. Tortuga.mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Sr. Tortuga/music/Mariachi - Sr. Tortuga (hd).mp3')"
+                style="display: none;">
+                <div class="song-title">Mariachi - Sr. Tortuga (hd)</div>
+                <div class="song-artist">Artista: Sr. Tortuga.</div>
+                <a class="download-link" href="musica/artistas/Sr. Tortuga/music/Mariachi - Sr. Tortuga (hd).mp3"
+                    download>Descargar</a>
+            </li>
+            <!--Lion Kxng-->
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Lion Kxng/music/NERF GTA - Lion Kxng x (IA -DUKI ) #fucksapos.mp3')"
+                style="display: none;">
+                <div class="song-title">NERF GTA - Lion Kxng x (IA -DUKI ) #fucksapos</div>
+                <div class="song-artist">Artista: Lion Kxng</div>
+                <a class="download-link"
+                    href="musica/artistas/Lion Kxng/music/NERF GTA - Lion Kxng x (IA -DUKI ) #fucksapos.mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/Lion Kxng/music/Sr Tortuga - Lion Kxng  (Letra ) Prod.Krido.mp3')"
+                style="display: none;">
+                <div class="song-title">Sr Tortuga - Lion Kxng (Letra ) Prod.Krido</div>
+                <div class="song-artist">Artista: Lion Kxng</div>
+                <a class="download-link"
+                    href="musica/artistas/Lion Kxng/music/Sr Tortuga - Lion Kxng  (Letra ) Prod.Krido.mp3"
+                    download>Descargar</a>
+            </li>
+            <!--DJ ARKEANO-->
+            <li class="song-item" onclick="playSong('musica/artistas/DJ ARKEANO/music/ELECTRO KENET.mp3')"
+                style="display: none;">
+                <div class="song-title">ELECTRO KENET</div>
+                <div class="song-artist">Artista: DJLalitoArkeano</div>
+                <a class="download-link" href="musica/artistas/DJ ARKEANO/music/ELECTRO KENET.mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item"
+                onclick="playSong('musica/artistas/DJ ARKEANO/music/NO LO ENTIENDO   DJ ARKEANO x SR TORTUGA x ZES LIMADO.mp3')"
+                style="display: none;">
+                <div class="song-title">NO LO ENTIENDO /: DJ ARKEANO x SR TORTUGA x ZES LIMADO</div>
+                <div class="song-artist">Artista: DJLalitoArkeano</div>
+                <a class="download-link"
+                    href="musica/artistas/DJ ARKEANO/music/NO LO ENTIENDO   DJ ARKEANO x SR TORTUGA x ZES LIMADO.mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item" onclick="playSong('musica/artistas/DJ ARKEANO/music/ELECTRO SR. TORTUGA.mp3')"
+                style="display: none;">
+                <div class="song-title">ELECTRO SR. TORTUGA</div>
+                <div class="song-artist">Artista: DJLalitoArkeano</div>
+                <a class="download-link" href="musica/artistas/DJ ARKEANO/music/ELECTRO SR. TORTUGA.mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item" onclick="playSong('musica/artistas/DJ ARKEANO/music/ELECTRO FURRO.mp3')"
+                style="display: none;">
+                <div class="song-title">ELECTRO FURRO</div>
+                <div class="song-artist">Artista: DJLalitoArkeano</div>
+                <a class="download-link" href="musica/artistas/DJ ARKEANO/music/ELECTRO FURRO.mp3"
+                    download>Descargar</a>
+            </li>
+            <li class="song-item" onclick="playSong('musica/artistas/DJ ARKEANO/music/electro arkeanos.mp3')"
+                style="display: none;">
+                <div class="song-title">ELECTRO ARKEANOS</div>
+                <div class="song-artist">Artista: DJLalitoArkeano</div>
+                <a class="download-link" href="musica/artistas/DJ ARKEANO/music/electro arkeanos.mp3"
+                    download>Descargar</a>
+            </li>
+        </ul>
+
+        <h2>Catálogo</h2>
+        <ul class="artist-list">
+            <li class="artist-item" onclick="showArtistSongs('H3CKO')">
+                <img src="https://yt3.googleusercontent.com/2N_EsP0nQTIb3awEG0nv2sY5Cos6iA3g_7VXGC2hlAYXuGzEO0FN7fJty00W7yjaYQOT_vQd=s160-c-k-c0x00ffffff-no-rj"
+                    alt="">
+                <span>H3CKO</span>
+            </li>
+            <li class="artist-item" onclick="showArtistSongs('Cuervofake')">
+                <img src="https://yt3.googleusercontent.com/4arUwaYNcB7-x25UZJqV9OVlqekz6vqz206Az7pYUXykE0lPXYdNRyCc6dBlf-V2heaDjqVJ=s160-c-k-c0x00ffffff-no-rj"
+                    alt="">
+                <span>Cuervø</span>
+            </li>
+            <li class="artist-item" onclick="showArtistSongs('Sr. Tortuga.')">
+                <img src="https://yt3.googleusercontent.com/SgzbLkwmSKdeZa3l9VAJ6Rfi_gyjr-RteWD4oRcPkQVPCN6ibOydup5I1HSXQSNddSpJEDFBTQ8=s160-c-k-c0x00ffffff-no-rj"
+                    alt="">
+                <span>Sr. Tortuga</span>
+            </li>
+            <li class="artist-item" onclick="showArtistSongs('Lion Kxng')">
+                <img src="https://yt3.googleusercontent.com/9icWD150FlNq65ef0gkW7UhccP3zCWNmh8-Ig4J5gbTqBMBqwwXBBSy5n7wWNTdhicp-uS7Y1js=s160-c-k-c0x00ffffff-no-rj"
+                    alt="">
+                <span>Lion Kxng</span>
+            </li>
+            <li class="artist-item" onclick="showArtistSongs('DJLalitoArkeano')">
+                <img src="https://yt3.googleusercontent.com/umeshRzKXdXbRwQ0H72gAuBEMdon7js7MBRxFPJ1ZralUsyVbAywB2kYfmYy_OydJPw68iEbFw=s160-c-k-c0x00ffffff-no-rj"
+                    alt="">
+                <span>DJ ARKEANO</span>
+            </li>
+            <li class="artist-item" onclick="showArtistSongs('KronnoZomberOficial')">
+                <img src="https://yt3.googleusercontent.com/pgk5dfEiWQ0SeOTPCJ75Zk4Gl_-HL_ppFBzWp5olgTpM5iJEAoDx4pL5TkT6e7XtRyxJ2KCQ=s160-c-k-c0x00ffffff-no-rj"
+                    alt="">
+                <span>Kronno Zomber</span>
+            </li>
+
+            <div id="artistSongs" style="display: none;">
+                <h2 id="artistName"></h2>
+                <div class="youtube-link">
+                    <a id="youtubeLink" href="#">
+                        <img class="youtube-logo" src="img/youtube.png" alt="YouTube Logo">
+                    </a>
+                </div>
+                <ul id="artistSongList" class="song-list">
+                    <!-- Las canciones del artista se mostrarán aquí -->
+                </ul>
+            </div>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

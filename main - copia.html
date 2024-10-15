@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARKEANOS Música</title>
+    <link rel="stylesheet" href="style - copia.css">
+    <link href="img/arkeanos.jpg" rel="shortcut icon">
+</head>
+<body>
+    <div class="container">
+        <h1>ARKEANOS Música</h1>
+        <audio id="audioPlayer" controls style="display: none;"></audio> <!-- Reproductor de audio oculto -->
+
+        <!-- Sección de canciones TOP -->
+        <h2>Canciones TOP</h2>
+        <ul id="topSongList" class="song-list"></ul>
+
+        <!-- Sección de canciones recientes -->
+        <h2>Canciones Recientes</h2>
+        <ul id="recentSongList" class="song-list"></ul>
+
+        <!-- Sección de catálogo -->
+        <h2>Catálogo</h2>
+<ul class="artist-list">
+    <li class="artist-item" onclick="showArtistSongs('H3CKO')">
+        <img src="https://yt3.googleusercontent.com/2N_EsP0nQTIb3awEG0nv2sY5Cos6iA3g_7VXGC2hlAYXuGzEO0FN7fJty00W7yjaYQOT_vQd=s160-c-k-c0x00ffffff-no-rj" alt="H3CKO" />
+        <span>H3CKO</span>
+    </li>
+    <li class="artist-item" onclick="showArtistSongs('cuervofake')">
+        <img src="https://yt3.googleusercontent.com/4arUwaYNcB7-x25UZJqV9OVlqekz6vqz206Az7pYUXykE0lPXYdNRyCc6dBlf-V2heaDjqVJ=s160-c-k-c0x00ffffff-no-rj" alt="Cuervø" />
+        <span>Cuervø</span>
+    </li>
+    <li class="artist-item" onclick="showArtistSongs('Sr. Tortuga.')">
+        <img src="https://yt3.googleusercontent.com/SgzbLkwmSKdeZa3l9VAJ6Rfi_gyjr-RteWD4oRcPkQVPCN6ibOydup5I1HSXQSNddSpJEDFBTQ8=s160-c-k-c0x00ffffff-no-rj"
+            alt="Sr. Tortuga.">
+        <span>Sr. Tortuga</span>
+    </li>
+    <li class="artist-item" onclick="showArtistSongs('Lion Kxng')">
+        <img src="https://yt3.googleusercontent.com/9icWD150FlNq65ef0gkW7UhccP3zCWNmh8-Ig4J5gbTqBMBqwwXBBSy5n7wWNTdhicp-uS7Y1js=s160-c-k-c0x00ffffff-no-rj" alt="Lion Kxng" />
+        <span>Lion Kxng</span>
+    </li>
+    <li class="artist-item" onclick="showArtistSongs('DJ ARKEANO')">
+        <img src="https://yt3.googleusercontent.com/umeshRzKXdXbRwQ0H72gAuBEMdon7js7MBRxFPJ1ZralUsyVbAywB2kYfmYy_OydJPw68iEbFw=s160-c-k-c0x00ffffff-no-rj" alt="DJ ARKEANO" />
+        <span>DJ ARKEANO</span>
+    </li>
+    <li class="artist-item" onclick="showArtistSongs('Kronno Zomber')">
+        <img src="https://yt3.googleusercontent.com/pgk5dfEiWQ0SeOTPCJ75Zk4Gl_-HL_ppFBzWp5olgTpM5iJEAoDx4pL5TkT6e7XtRyxJ2KCQ=s160-c-k-c0x00ffffff-no-rj" alt="Kronno Zomber" />
+        <span>Kronno Zomber</span>
+    </li>
+    
+    <!-- Agrega más artistas aquí -->
+</ul>
+
+
+        <!-- Sección dinámica de canciones del artista -->
+        <div id="artistSongs" style="display: none;">
+            <h2 id="artistName"></h2>
+            <div class="youtube-link">
+                <a id="youtubeLink" href="#">
+                    <img class="youtube-logo" src="img/youtube.png" alt="YouTube Logo">
+                </a>
+            </div>
+            <ul id="artistSongList" class="song-list"></ul> <!-- Lista dinámica para las canciones del artista -->
+        </div>
+    </div>
+
+    <script src="script - copia.js"></script>
+</body>
+</html>
