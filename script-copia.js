@@ -16,9 +16,10 @@ const catalog = {
             fileUrl: "https://www.dropbox.com/scl/fi/5hdhphvpql27ka2xs34uf/ARKADIA-RAP-_-KRONNO-ZOMBER-Prod.Rotter-Beats-_-Videoclip-Oficial-Kronno-Zomber.mp3?rlkey=uaej1wng4bte55069fvf9yhi0&st=2naftioo&raw=1",
             youtubeUrl: "https://youtube.com/someYoutubeLink",
             spotifyUrl: "https://spotify.com/someSpotifyLink"
-        }
+        },
+	
     ],
-    "DJ ARKEANO": [
+    "DJLalitoArkeano": [
         {
             title: "DE NUEVO REMIX - DJ ARKEANO, H3CK0, SR TORTUGA",
             fileUrl: "musica/artistas/DJ ARKEANO/music/DE NUEVO REMIX.mp3",
@@ -28,7 +29,8 @@ const catalog = {
 
         {
             title: "ELECTRO KENET",
-            fileUrl: "https://www.dropbox.com/scl/fi/5f03zxcwof350rr4sdeyr/ELECTRO-KENET.mp3?rlkey=z8zwuid74r4c29zjp2qd0ecr6&st=pky7o7a6&raw=1",
+            fileUrl: "https://www.dropbox.com/scl/fi/5f03zxcwof350rr4sdeyr/ELECTRO-KENET.mp3?rlkey=z8zwuid74r4c29zjp2qd0ecr6&st=q76xxwzx&raw=1",
+            filedownload:"https://www.dropbox.com/scl/fi/5f03zxcwof350rr4sdeyr/ELECTRO-KENET.mp3?rlkey=z8zwuid74r4c29zjp2qd0ecr6&st=q76xxwzx&dl=1",
             youtubeUrl: "https://youtube.com/someYoutubeLink",
             spotifyUrl: "https://spotify.com/someSpotifyLink"
         }
@@ -54,7 +56,7 @@ function generateSongList(songs, containerId) {
         songItem.innerHTML = `
                 <div class="song-title">${song.title}</div>
                 <div class="button-container" style="display: none;">
-                    <button class="button" onclick="downloadSong('${song.fileUrl}')">Descargar</button>
+                    <button class="button" onclick="downloadSong('${song.filedownload}')">Descargar</button>
                     <button class="button" onclick="copyLink('${song.youtubeUrl}'); event.stopPropagation();">Copiar YouTube</button>
                     <button class="button" onclick="copyLink('${song.spotifyUrl}'); event.stopPropagation();">Copiar Spotify</button>
                 </div>
