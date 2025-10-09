@@ -282,7 +282,7 @@ const catalog = {
         }
 
     ],
-    "Kronno Zomber": [
+    "@KronnoZomberOficial": [
         {
             title: "ARKADIA RAP | KRONNO ZOMBER (Prod.Rotter Beats)",
             fileUrl: "https://www.dropbox.com/scl/fi/5hdhphvpql27ka2xs34uf/ARKADIA-RAP-_-KRONNO-ZOMBER-Prod.Rotter-Beats-_-Videoclip-Oficial-Kronno-Zomber.mp3?rlkey=uaej1wng4bte55069fvf9yhi0&st=2naftioo&raw=1",
